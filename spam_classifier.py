@@ -1,12 +1,4 @@
-"""
-Created on Mon Jul 20 16:13:21 2015
-
-The script that actually does the classification.
-
-@author: aashishsatya
-"""
-
-from TrainingSetsUtil import *
+from training_sets_util import *
 
 # c is an experimentally obtained value
 def classify(message, training_set, prior = 0.5, c = 3.7e-4):
@@ -30,14 +22,14 @@ def classify(message, training_set, prior = 0.5, c = 3.7e-4):
 
 # uncomment this to provide input to the program
   
-#mail_msg = raw_input('Enter the message to be classified:')
-#print ''
+#mail_msg = input('Enter the message to be classified: ')
+#print()
 #
 ## 0.2 and 0.8 because the ratio of samples for spam and ham were the 0.2-0.8
 #spam_probability = classify(mail_msg, spam_training_set, 0.2)
 #ham_probability = classify(mail_msg, ham_training_set, 0.8)
 #if spam_probability > ham_probability:
-#    print 'Your mail has been classified as SPAM.'
+#    print('Your mail has been classified as SPAM.')
 #else:
-#    print 'Your mail has been classified as HAM.'
-#print ''
+#    print('Your mail has been classified as HAM.')
+#print()
