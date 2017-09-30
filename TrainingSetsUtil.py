@@ -1,12 +1,3 @@
-"""
-Created on Thu Jul 16 21:58:45 2015
-
-Script that handles operations involving the body of the e-mail, such as
-tokenizing, counting words, etc.
-
-@author: Aashish Satyajith
-"""
-
 # for tokenize
 import nltk
 from nltk.corpus import stopwords
@@ -31,7 +22,7 @@ def get_words(message):
     Extracts all the words from the given mail and returns it as a set.
     """
     
-    # thanks http://slendermeans.org/ml4h-ch3.html
+    # credits http://slendermeans.org/ml4h-ch3.html
     
     # remove '=' symbols before tokenizing, since these
     # sometimes occur within words to indicate, e.g., line-wrapping
@@ -116,9 +107,9 @@ def make_training_set(path):
                             
     return training_set
 
-print ''    
-print 'Loading training sets...',
+print('')
+print('Loading training sets...')
 spam_training_set = make_training_set(spam_path)
 ham_training_set = make_training_set(easy_ham_path)
-print 'done.'
-print ''
+print('done.')
+print('')
