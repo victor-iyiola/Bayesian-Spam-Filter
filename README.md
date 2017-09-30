@@ -26,6 +26,6 @@ python SpamClassifier.py
 
 and you should be good to go.
 
-As always, feel free to contact me at ankarathaashish@gmail.com for suggestions for improvement or bug reports. Thank you!!
+As always, feel free to contact me at javafolabi@gmail.com for suggestions for improvement or bug reports. Thank you!!
 
 
